@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam fugit iste perferendis facere fuga cumque dolorum nisi sed quos autem dolore eligendi quod illum aliquam vitae illo, odit aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium at totam neque ad quidem quia natus odio qui, aut doloremque repellat vitae asperiores sit incidunt. Architecto necessitatibus in quia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam fugit iste perferendis facere fuga cumque dolorum nisi sed quos autem dolore eligendi quod illum aliquam vitae illo, odit aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium at totam neque ad quidem quia natus odio qui, aut doloremque repellat vitae asperiores sit incidunt. Architecto necessitatibus in quia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam fugit iste perferendis facere fuga cumque dolorum nisi sed quos autem dolore eligendi quod illum aliquam vitae illo, odit aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium at totam neque ad quidem quia natus odio qui, aut doloremque repellat vitae asperiores sit incidunt. Architecto necessitatibus in quia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam fugit iste perferendis facere fuga cumque dolorum nisi sed quos autem dolore eligendi quod illum aliquam vitae illo, odit aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium at totam neque ad quidem quia natus odio qui, aut doloremque repellat vitae asperiores sit incidunt. Architecto necessitatibus in quia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam fugit iste perferendis facere fuga cumque dolorum nisi sed quos autem dolore eligendi quod illum aliquam vitae illo, odit aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium at totam neque ad quidem quia natus odio qui, aut doloremque repellat vitae asperiores sit incidunt. Architecto necessitatibus in quia.</h1>
+    <button id="wppBtnAll" class="wppbtnbody" onclick="showModal()"><img width="40px" src="imgs/whatsapp.png" alt=""> <p>Faça seu orçamento</p></button>
+    <div class="modal showModal" id="modal">
+        <div class="modalContent">
+            <span class='close' onclick="showModal()">&times;</span>
+            <img class="catDog" src="imgs/CatandDog.png" alt="">
+            <form class="formPop">
+               <div class="backIndex">
+                   
+                   <h1>Peça agora seu orçamento!</h1>
+                   <label for="select1">Qual seu Pet?</label>
+                   
+                   <select onclick="dogChange(), porteDog(), catdisabled(), planes()" name="" id="select1">
+                       <option value=" " selected>Selecione</option>
+                       <option value="cachorro">Cachorro</option>
+                       <option value="gato">Gato</option>
+                       <option value="other">Outro</option>
+                   </select>
+                   <div class="dogW" id="select2">
+                       <label for="select2">Qual o tipo de serviço?</label>
+                       <br>
+                       <select onclick="planes()" name="" id="typeService">
+                           <option value=" " selected>Selecione</option>
+                           <option value="banho">Banho</option>
+                           <option value="Tosa">Tosa</option>
+                           <option value="Banho e Tosa">Banho e tosa</option>
+                           <option value="outro">Outro</option>
+                       </select>
+                   </div>
+                           <!-- Porte -->
+                   <div class="porte" id="porte">
+                       <label for="porte">Qual o porte do seu cachorro?</label>
+                       <br>
+                       <select name="porte" id="TypePorte">
+                           <option value=" " selected>Selecione</option>
+                           <option value="8KG-P">P: 8KG</option>
+                           <option value="20KG-M">M: 20KG</option>
+                           <option value="40KG-G">G: 40KG</option>
+                           <option value="+40KG-GG">GG:  +40KG</option>
+                       </select>
+                   </div>
+                           <!-- Planos -->
+                   <div class="planoClass" id="planoDiv">
+                       <label for="porte">Qual o plano desejado?</label>
+                       <br>
+                       <select onclick="planesShow()" name="plano" id="plano">
+                           <option value=" " selected>Selecione</option>
+                           <option id="valuecat" value="Economico">Economico</option>
+                           <option value="Premium">Premium</option>
+                           <option value="Super-Premium">Super-Premium</option>
+                       </select>
+                   </div>
+                           <!-- Outro -->
+                   <div class="other" id="outro">
+                       <label for="otherID">Diga mais sobre seu Pet!</label>
+                       <input class="inputOther" wrap="hard" type="text" placeholder="Nos diga mais sobre seu pet!" value=" " id="otherID">
+                   </div>
+                   <div class="cardsWrap" id="cardsWrapID">
+                       <div class="cards">
+                        <div id="premiumCard" class="card">
+                            <div class="imgscardhoverE">
+                                <img class="imgCard" id="cardEconomy" width="100" src="imgs/Economico.jpg" alt="premium">
+                                <div class="cardUlEconomy">
+                                    <h1>Econômico</h1>
+                                    <p>3</p>
+                                        <ul class="orange">
+                                            &nbsp;
+                                            <li>PET CHEIROSO POR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DIAS</li>
+                                            <li>HIGIÊNE COMPLETA</li>
+                                            <li>SECAGEM 100% AUTOMATICA</li>
+                                            <li>1 SHAMPOO 3 EM 1</li>
+                                            <li>FINALIZAÇÃO BÁSICA</li>
+                                            <li>ENFEITES BÁSICOS DE LAÇOS E GRAVATAS</li>
+                                        </ul>
+                                </div>
+                            </div>
+                       </div>
+
+                           <div id="premiumCard" class="card">
+                                <div class="imgscardhover">
+                                    <img class="imgCard" id="CardPmium" width="100" src="imgs/Premium.jpg" alt="premium">
+                                    <div class="cardUlPremium">
+                                        <h1>Premium</h1>
+                                        <p>5</p>
+                                            <ul class="green">
+                                                &nbsp;
+                                                <li>PET CHEIROSO POR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DIAS</li>
+                                                <li>HIGIÊNE COMPLETA</li>
+                                                <li>SECAGEM MISTA COM MAQUINA E MANUAL</li>
+                                                <li>SHAMPOO PRÉ-LAVAGEM</li>
+                                                <li>TONALIZANTE PARA PELAGENS CLARAS E ESCURAS</li>
+                                                <li>HIDRATAÇÃO ESPECIAL</li>
+                                                <li>FINALIZAÇÃO PROFISSIONAL</li>
+                                                <li>ENFEITES BÁSICOS DE LAÇOS E GRAVATAS</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                           </div>
+
+                        <div id="premiumCard" class="card">
+                            <div class="imgscardhoverSP">
+                                <img class="imgCard" id="CardSPmium" width="100" src="imgs/SuperPremium.jpg" alt="premium">
+                                <div class="cardUlS_Premium">
+                                    <h1>Super Premium</h1>
+                                    <p>7</p>
+                                        <ul class="purple">
+                                            &nbsp;
+                                            <li>PET CHEIROSO POR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DIAS</li>
+                                            <li>HIGIÊNE COMPLETA</li>
+                                            <li>SECAGEM 100% MANUAL</li>
+                                            <li>SHAMPOO PRÉ-LAVAGEM</li>
+                                            <li>TONALIZANTE PARA PELAGENS CLARAS E ESCURAS</li>
+                                            <li>HIDRATAÇÃO ESPECIAL</li>
+                                            <li>FINALIZAÇÃO PROFISSIONAL</li>
+                                            <li>ENFEITES SOFISTICADOS E PERSONALIZADOS</li>
+                                            <li>TRATAMENTO DIFERENCIADO</li>
+                                        </ul>
+                                </div>
+                            </div>
+                       </div>
+                       </div>
+                   </div>
+                   <div class="BtnwppWrap">
+                       <button class="btnWppAll" id="BtnWppPop" onclick="enviarMsgwpp()"><img width="40px" src="imgs/whatsapp.png" alt="wpplogo"><a href="">Faça agora!</a></button>
+                   </div>
+               </div>
+                <div class="pataBack"></div>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+        <script src="index.js"></script>
+</body>
+</html>

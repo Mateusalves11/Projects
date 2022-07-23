@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+hr{
+    margin: 0;
+}
+section h1{
+    position: absolute;
+    top: 50%;
+}
+.modal{
+    letter-spacing: 1px;
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+    z-index: 99999;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.pataBack{
+    background:url(imgs/Design\ sem\ nome\ \(1\).png) no-repeat center;
+    padding: 16px 24px;
+    top:-21px;
+    width: 484px;
+    height: 699px;
+    border-radius: 8px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+}
+.modalContent{
+    background-color: #0f5dd3e0;
+    padding: 16px 24px;
+    width: 484px;
+    height: 700px;
+    border-radius: 8px;
+    color: white;
+    
+}
+
+.close{
+    cursor: pointer;
+    width: 24px;
+    float: right;
+    background-color: rgb(39, 38, 97);
+    text-align: center;
+    line-height: 24px;
+    border-radius: 20px;
+}
+.dogW{
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+.porte{
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.formPop{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    top: -400px;
+    position: relative;
+    color: #ffffff;
+}
+.backIndex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0px;
+    position: relative;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.other{
+    top: 80px;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+.BtnwppWrap{
+    display: flex;
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 650px;
+}
+.btnWppAll{
+    width: 240px;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    font-style: none;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #29a71a;
+    cursor: pointer;    
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.6);
+}
+.btnWppAll:hover{
+    background-color: #237427;
+}
+.btnWppAll a{
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+    color: white;
+    
+}
+
+.btnWppAll img{
+    position: relative;
+    right: 15px;
+    top: 2px;
+}
+.inputOther{
+    width: 340px;
+    height: 60px;
+    top: 380px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+select{
+    width: 340px;
+    height: 30px;
+    top: 0px;
+    text-align: center;
+    border-radius: 7px;
+    margin: 0px 0px 30px 0px;
+    position: relative;
+}
+.close{
+z-index: 9999;
+position: absolute;
+}
+
+.formPop label{
+    font-size: 24px;
+}
+
+.wppbtnbody{
+border-radius: 10px;
+position: fixed;
+bottom: 10px;
+right: 10px;
+cursor: pointer;
+background-color: #29a71a;
+z-index: 9999;
+font-family: 'Bebas Neue', sans-serif;
+display: flex;
+height: 50px;
+width: 200px;
+font-size: 20px;
+text-align: center;
+justify-content: center;
+align-items: center;
+color: white;
+box-shadow: 0px 0px 25px rgba(0,0,0,0.6);
+}
+
+.catDog{
+    width: 400px;
+    height: 400px;
+    top: -271px;
+    position: relative;
+}
+
+
+
+/* Cards */
+.cardsWrap{
+display: flex;
+opacity: 0;
+visibility: hidden;
+}
+.cardsWrap h1{
+    letter-spacing: 5px;
+}
+.cards{
+    display: flex;
+    position: relative;
+    top: -90px;
+}
+
+.card{
+    /* font-size: 20px; */
+    display: block;
+    position: relative;
+    margin: 0px 0px 0px 1rem;
+    /* opacity: 0;
+    visibility: hidden; */
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.planoClass{
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+ 
+.imgCard{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.cardUlEconomy{
+    visibility: hidden;
+    opacity: 0; 
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 255px;
+    right: 90px;
+    top: -450px;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.cardUlPremium{
+    visibility: hidden;
+    opacity: 0; 
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    right: 90px;
+    top: -545px;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+    
+.green{
+    color: rgb(44, 74, 207);
+    width:100px;
+    top: -150px;
+    position: relative;
+}
+.orange{
+    color: rgb(219, 113, 14);
+    width:100px;
+    top: -150px;
+    position: relative;
+    
+}
+.imgscardhover{
+    width: 110px;
+    height: 165px;
+}
+.imgscardhover p{
+    margin: 0;
+    font-size: 32px;
+    left: 160px;
+    top: -27px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #1c5eb4;
+    color: #ffffff;
+    position: relative;
+}
+     
+.imgscardhover ul{
+    text-align: start;
+    width: 270px;
+    right: 10px;
+    position: relative;
+    top: -100px;
+    font-size: 20px;
+}
+/*  */
+.imgscardhoverE{
+    width: 110px;
+    height: 165px;
+}
+.imgscardhoverE p{
+    margin: 0;
+    font-size: 25px;
+    left: 158px;
+    top: -23px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(219, 113, 14);
+    color: #ffffff;
+    position: relative;
+}
+   li{
+    list-style-type: "\1F5F8";
+   }  
+.imgscardhoverE ul{
+    font-size: 20px;
+    text-align: start;
+    width: 250px;
+    right: 15px;
+    position: relative;
+    top: -95px;
+}
+/*  */
+.imgscardhoverSP{
+    width: 110px;
+    height: 165px;
+}
+.imgscardhoverE h1{color: rgb(219, 113, 14);}
+.imgscardhover h1{color: rgb(44, 74, 207);}
+
+.imgscardhoverSP p{
+    margin: 0;
+    font-size: 47px;
+    left: 179px;
+    top: -29px;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    background-color:rgb(81, 27, 112);
+    color: #ffffff;
+    position: relative;
+}
+   li{
+    list-style-type: "\1F5F8";
+   }  
+.imgscardhoverSP ul{
+    font-size: 21px;
+    text-align: start;
+    width: 250px;
+    right: 0px;
+    position: relative;
+    top: -110px;
+}
+/*  */
+.cardUlS_Premium{
+    visibility: hidden;
+    opacity: 0;
+    flex-wrap: wrap;
+    color: rgb(81, 27, 112);
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 390px;
+    right: 120px;
+    top: -586px;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    z-index:9;
+}
+.imgscardhover:hover .cardUlPremium{
+    visibility: visible;
+    opacity: 1;
+}
+.imgscardhover:hover .imgCard{
+    transform: scale(1.1);
+}
+
+.imgscardhoverE:hover .cardUlEconomy{
+    visibility: visible;
+    opacity: 1;
+}
+.imgscardhoverE:hover .imgCard{
+    transform: scale(1.1);
+}
+.imgscardhoverSP:hover .cardUlS_Premium{
+    visibility: visible;
+    opacity: 1;
+}
+.imgscardhoverSP:hover .imgCard{
+    transform: scale(1.1);
+}
+
+
+.showModal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+.grayscale{
+    filter: grayscale(100%);
+}
+
+
+
+@media (max-width: 800px) {
+.modalContent{
+    width: 364px;
+    height:540px;
+
+    
+}
+.pataBack{
+    background:url(imgs/Design\ sem\ nome\ \(1\).png) no-repeat center;
+    padding: 16px 24px;
+    top: 108px;
+    width: 364px;
+    height: 540px;
+    border-radius: 8px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+}
+.formPop label{
+    font-size: 18px;
+}
+
+select{
+    width: 300px;
+    height: 30px;
+    top: 0px;
+    text-align: center;
+    border-radius: 7px;
+    margin: 0px 0px 15px 0px;
+    position: relative;
+}
+
+.formPop{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    top: -430px;
+    position: relative;
+    color: #ffffff;
+}
+.catDog{
+    width: 300px;
+    height: 300px;
+    top: -206px;
+}
+.backIndex{
+    top: 120px;
+}
+.imgCard{
+    width: 85px;
+    height: 115px;
+    position: relative;
+}
+
+.btnWppAll{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: -150px;
+}
+
+.cardUlS_Premium{
+    right: 215px;
+    top: -540px;
+}
+.cardUlEconomy{
+    right:-10px;
+    top: -420px;
+}
+.cardUlPremium{
+    right: 100px;
+    top: -500px;
+
+}
+.imgscardhoverE{
+    width: 90px;
+    height: 115px;
+}
+.imgscardhoverSP{
+    width: 90px;
+    height: 115px;
+}
+.imgscardhover{
+    width: 90px;
+    height: 115px;
+}
+}
