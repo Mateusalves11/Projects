@@ -423,7 +423,7 @@ visibility: hidden;
 
 
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
 .other{
     top: 40px;
 }
