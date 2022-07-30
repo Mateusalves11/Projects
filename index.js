@@ -46,7 +46,7 @@ function urlModal(){
     const url_atual = window.location.href;
     const modal = document.getElementById("modalPET");
 
-    if(url_atual == 'https://petmastershop.com.br/index.php' || url_atual == 'https://petmastershop.com.br/index.php?categoryID=417' || url_atual == 'https://petmastershop.com.br/' || url_atual == 'http://127.0.0.1:5500/')
+    if(url_atual == 'https://petmastershop.com.br/index.php' || url_atual == 'https://petmastershop.com.br/index.php?categoryID=417' || url_atual == 'https://petmastershop.com.br/' || url_atual == 'https://mateusalves11.github.io/Projects/')
     {  
         modal.classList.add("showModalPET");
     }
